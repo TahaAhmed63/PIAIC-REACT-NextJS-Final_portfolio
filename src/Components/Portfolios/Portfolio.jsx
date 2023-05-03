@@ -33,11 +33,14 @@ export const Portfolio = () => {
     <Col md={item.type === 'full' ? 12 : 6} xs={12} key={item.id}>
       <div className='portfolio-item portfolio-full'>
         <div className='portfolio-item-inner'>
-          <a href={item.link} data-lightbox='example-1'>
-          <div class="overlay">
+        <div class="overlay">  
+    
+        
             <img className='img-fluid' src={item.imageSrc} alt={item.title} />
+           
             </div>
-          </a>
+     
+     
           <ul className='portfolio-categories'>
             {item.categories.map((category) => (
               <li key={category}>
@@ -47,7 +50,9 @@ export const Portfolio = () => {
           </ul>
         </div>
         <h2>
+        <a href={item.link} data-lightbox='example-1'>
         {item.title}
+        </a>
         </h2>
       </div>
     </Col>

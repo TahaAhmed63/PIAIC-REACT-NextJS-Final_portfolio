@@ -875,6 +875,9 @@ color: #999999;
 .portfolio-full {
   margin-bottom: 62px;
 }
+.portfolio-item h2 a{
+  color: #fff;
+}
 .portfolio-item-inner {
   height: 410px;
 }
@@ -902,6 +905,7 @@ color: #999999;
 }
 a{
   text-decoration: none !important;
+
  
 }
 li{
