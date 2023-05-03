@@ -8,6 +8,7 @@ import { About } from '@/Components/About/About'
 import {Resume} from '@/Components/Resume/Resume'
 import { Services } from '@/Components/Services/Services'
 import { Skills } from '@/Components/SKILLS/Skills'
+import { Portfolio } from '@/Components/Portfolios/Portfolio'
 export default function Home() {
   return (
     <>
@@ -25,6 +26,7 @@ export default function Home() {
 <Resume/>
 <Services/>
 <Skills/>
+<Portfolio/>
     </>
   )
 }

@@ -1,15 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import {FaShapes} from 'react-icons/fa'
 import { Col, Row } from 'react-bootstrap'
-import htmlImg from './../../assets/html3.png';
-import cssImg from './../../assets/cart (1).png';
-import jsImg from './../../assets/java-script.png';
-import reactImg from './../../assets/react.png';
-import reduxImg from './../../assets/redux.png';
-import nodeImg from './../../assets/node.png';
-import dockerImg from './../../assets/docker.png';
-import kubernetesImg from './../../assets/kubernets (1).png';
-import Image from 'next/image'
+
 export const Skills = () => {
     const [SkillsData,setSkillsData]=useState([])
     useEffect(() => {
@@ -39,7 +31,7 @@ export const Skills = () => {
               <Col key={index} xs={6} md={3}>
                 <div className="skill">
                   <div className="skill-inner">
-                    <Image src={skill.image=== htmlImg && htmlImg ||skill.image=== cssImg && cssImg || skill.image ===jsImg && jsImg || skill.image === reactImg && reactImg || skill.image === reduxImg && reduxImg || skill.image === nodeImg && nodeImg || skill.image === dockerImg && dockerImg || skill.image === kubernetesImg && kubernetesImg } />
+                    <img src={skill.image} />
                     <h1 className="parcent">{skill.percentage}%</h1>
                   </div>
                   <p className="name">{skill.name}</p>

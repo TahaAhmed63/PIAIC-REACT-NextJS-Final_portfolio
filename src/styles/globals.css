@@ -856,8 +856,80 @@ color: #999999;
   display: block;
   margin: auto auto 29px auto;
 }
+.skill .skill-inner:hover {
+  border-color: var(--primary_color);
+}
  .skill p {
   font-size: 14px;
   color: #fff;
   margin: 0;
+}
+
+
+/* Portfolio */
+
+.portfolio-area {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.portfolio-full {
+  margin-bottom: 62px;
+}
+.portfolio-item-inner {
+  height: 410px;
+}
+
+ .portfolio-item-inner {
+  height: 370px;
+  overflow: hidden;
+  border-radius: 30px;
+  position: relative;
+  margin-bottom: 30px;
+}
+ .portfolio-item-inner img {
+  display: block;
+
+  object-fit: cover;
+}
+.portfolio-categories {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  bottom: 20px;
+  left: 20px;
+}
+a{
+  text-decoration: none !important;
+ 
+}
+li{
+  list-style: none !important;
+}
+.portfolio-categories li a {
+  display: block;
+  font-size: 14px;
+  background: #000000;
+  color: #ffffff;
+  padding: 7px 20px;
+  font-family: Inter,sans-serif;
+  border-radius: 19px;
+  transition: .3s;
+}
+
+.portfolio-item h2 {
+  font-size: 24px;
+  font-weight: 300;
+  font-family: Inter,sans-serif;
+
+  margin: 0;
+}
+ .portfolio-item h2  {
+  color: #fff;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: .3s;
+  font-family: Inter,sans-serif;
+
 }
