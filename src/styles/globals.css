@@ -836,3 +836,28 @@ color: #999999;
   padding-top: 90px;
   padding-bottom: 40px;
 }
+.skill {
+  margin-bottom: 50px;
+}
+ .skill .skill-inner {
+  border: 2px solid #565656;
+  border-radius: 85px;
+  padding: 54px 0 48px 0;
+  margin-bottom: 20px;
+  transition: .3s;
+}
+ .skill-inner h1 {
+  font-size: 30px;
+  color: var(--primary_color);
+  font-weight: 300;
+  margin: 0;
+}
+.skill-inner img {
+  display: block;
+  margin: auto auto 29px auto;
+}
+ .skill p {
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+}
