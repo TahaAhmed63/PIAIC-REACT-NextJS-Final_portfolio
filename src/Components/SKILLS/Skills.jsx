@@ -15,7 +15,7 @@ export const Skills = () => {
       }, []);
   return (
  <>
- <section className="skills-area page-section">
+ <section className="skills-area page-section" id='skills' >
     <div className="custum-container">
         <div className="skill-content content-width">
        <div className="section-header">

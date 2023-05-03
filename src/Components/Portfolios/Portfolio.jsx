@@ -16,7 +16,7 @@ export const Portfolio = () => {
   return (
     
    <>
-    <section className="portfolio-area">
+    <section className="portfolio-area"  id='portfolio'>
         <div className="custum-container">
             <div className="portfolio-content content-width">
                 <div className="section-header">

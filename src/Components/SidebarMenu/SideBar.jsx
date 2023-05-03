@@ -143,21 +143,21 @@ const Sidebar = () => {
         </a>
   </li>
   <li>
-    <a  onClick={() => setActiveMenuItem('item4')} className={activeMenuItem === 'item4' ? 'active' : ''} href="#">
+    <a  onClick={() => setActiveMenuItem('item4')} className={activeMenuItem === 'item4' ? 'active' : ''} href="#services">
     
         <i className='home'><FaStream/></i>
         </a>
       
   </li>
   <li>
-    <a  onClick={() => setActiveMenuItem('item5')} className={activeMenuItem === 'item5' ? 'active' : ''} href="#">
+    <a  onClick={() => setActiveMenuItem('item5')} className={activeMenuItem === 'item5' ? 'active' : ''} href="#skills">
     
         <i className='home'><FaShapes/></i>
         </a>
 
   </li>
   <li>
-    <a  onClick={() => setActiveMenuItem('item6')} className={activeMenuItem === 'item6' ? 'active' : ''} href="#">
+    <a  onClick={() => setActiveMenuItem('item6')} className={activeMenuItem === 'item6' ? 'active' : ''} href="#portfolio">
         <i className='home'><FaGripVertical/></i>
         </a>
   </li>
