@@ -53,7 +53,7 @@ CONTACT
           <Form.Group>
             <InputGroup>
               <Form.Label htmlFor="full-name">Full Name <sup>*</sup></Form.Label>
-              <FormControl className='fields' type="text" name="full-name" id="full-name" placeholder="Your Full Name" />
+              <FormControl required className='fields' type="text" name="full-name" id="full-name" placeholder="Your Full Name" />
             </InputGroup>
           </Form.Group>
         </Col>
@@ -61,7 +61,7 @@ CONTACT
           <Form.Group>
             <InputGroup>
               <Form.Label htmlFor="email">Email <sup>*</sup></Form.Label>
-              <FormControl className='fields' type="email" name="email" id="email" placeholder="Your email adress" />
+              <FormControl required className='fields' type="email" name="email" id="email" placeholder="Your email adress" />
             </InputGroup>
           </Form.Group>
         </Col>
@@ -69,7 +69,7 @@ CONTACT
           <Form.Group>
             <InputGroup>
               <Form.Label htmlFor="phone-number">Phone <span>(optional)</span></Form.Label>
-              <FormControl className='fields' type="text" name="phone-number" id="phone-number" placeholder="Your phone number" />
+              <FormControl required className='fields' type="text" name="phone-number" id="phone-number" placeholder="Your phone number" />
             </InputGroup>
           </Form.Group>
         </Col>
@@ -77,7 +77,7 @@ CONTACT
           <Form.Group>
             <InputGroup>
               <Form.Label htmlFor="subject">Subject <sup>*</sup></Form.Label>
-              <Form.Select className='fields' name="subject" id="subject">
+              <Form.Select required className='fields' name="subject" id="subject">
                 <option value="">Select a subject</option>
                 <option value="subject1">Subject 1</option>
                 <option value="subject2">Subject 2</option>
@@ -90,7 +90,7 @@ CONTACT
           <Form.Group>
             <InputGroup>
               <Form.Label htmlFor="budget">Your Budget <span>(optional)</span></Form.Label>
-              <FormControl className='fields' type="number" name="budget" id="budget" placeholder="A range budget for your project" />
+              <FormControl required className='fields' type="number" name="budget" id="budget" placeholder="A range budget for your project" />
             </InputGroup>
           </Form.Group>
         </Col>
@@ -98,7 +98,7 @@ CONTACT
           <Form.Group>
             <InputGroup>
               <Form.Label htmlFor="message">Message</Form.Label>
-              <Form.Control className='fields' as="textarea" name="message" id="message" placeholder="Write your message here ..." />
+              <Form.Control required className='fields' as="textarea" name="message" id="message" placeholder="Write your message here ..." />
             </InputGroup>
           </Form.Group>
         </Col>
@@ -108,7 +108,7 @@ CONTACT
               <div>
                 <Form.Label htmlFor="upload-attachment">
                   <i className="las la-cloud-upload-alt"><VscCloudUpload/></i> Add an attachment
-                  <FormControl className='fields' type="file" name="file" id="upload-attachment" />
+                  <FormControl required className='fields' type="file" name="file" id="upload-attachment" />
                 </Form.Label>
               </div>
             </InputGroup>
