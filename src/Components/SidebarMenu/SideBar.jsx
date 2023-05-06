@@ -53,50 +53,50 @@ const Sidebar = () => {
       <div className="menu-wrap">
         <p>Menu</p>
         <ul className="menu-item">
-          <li onClick={closeMenu}>
-            <a href="#">
+          <li onClickonClick={() => {setActiveMenuItem('item2'); handleMenuClose();}}>
+            <a href="#home">
             <i className='home'><AiOutlineHome/></i>
             <span>{sidebarLinks[0]}</span>
             </a>
           </li>
-          <li onClick={closeMenu}>
-            <a href="#">
+          <li onClickonClick={() => {setActiveMenuItem('item2'); handleMenuClose();}}>
+            <a href="#About">
             <i className='home'><RxPerson/></i>
             <span>{sidebarLinks[1]}</span>
             </a>
           </li>
-          <li onClick={closeMenu}>
-            <a href="#">
+          <li onClickonClick={() => {setActiveMenuItem('item2'); handleMenuClose();}}>
+            <a href="#Resume">
             <i className='home'><RiBriefcaseLine/></i>
             <span>{sidebarLinks[2]}</span>
             </a>
           </li>
-          <li onClick={closeMenu}>
-            <a href="#">
+          <li onClickonClick={() => {setActiveMenuItem('item2'); handleMenuClose();}}>
+            <a href="#services">
             <i className='home'><FaStream/></i>
             <span>{sidebarLinks[3]}</span>
             </a>
           </li>
-          <li onClick={closeMenu}>
-            <a href="#">
+          <li onClickonClick={() => {setActiveMenuItem('item2'); handleMenuClose();}}>
+            <a href="#skills">
             <i className='home'><FaShapes/></i>
             <span>{sidebarLinks[4]}</span>
             </a>
           </li>
-          <li onClick={closeMenu}>
-            <a href="#">
+          <li onClickonClick={() => {setActiveMenuItem('item2'); handleMenuClose();}}>
+            <a href="#portfolio">
             <i className='home'><FaGripVertical/></i>
             <span>{sidebarLinks[5]}</span>
             </a>
           </li>
-          <li onClick={closeMenu}>
-            <a href="#">
+          <li onClickonClick={() => {setActiveMenuItem('item2'); handleMenuClose();}}>
+            <a href="#testimonial">
             <i className='home'><CgComment/></i>
             <span>{sidebarLinks[6]}</span>
             </a>
           </li>
-          <li onClick={closeMenu}>
-            <a href="#">
+          <li onClickonClick={() => {setActiveMenuItem('item2'); handleMenuClose();}}>
+            <a href="#contact">
             <i className='home'><BsEnvelope/></i>
             <span>{sidebarLinks[7]}</span>
             </a>
@@ -162,14 +162,14 @@ const Sidebar = () => {
         </a>
   </li>
   <li>
-    <a  onClick={() => setActiveMenuItem('item7')} className={activeMenuItem === 'item7' ? 'active' : ''} href="#">
+    <a  onClick={() => setActiveMenuItem('item7')} className={activeMenuItem === 'item7' ? 'active' : ''} href="#testimonial">
     
         <i className='home'><CgComment/></i>
         </a>
       
   </li>
   <li>
-    <a  onClick={() => setActiveMenuItem('item8')} className={activeMenuItem === 'item8' ? 'active' : ''} href="#">
+    <a  onClick={() => setActiveMenuItem('item8')} className={activeMenuItem === 'item8' ? 'active' : ''} href="#contact">
         <i className='home'><BsEnvelope/></i>
       </a>
   </li>

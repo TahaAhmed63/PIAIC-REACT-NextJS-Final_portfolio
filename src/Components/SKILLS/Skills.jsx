@@ -13,6 +13,7 @@ export const Skills = () => {
     
         fetchSkillsData();
       }, []);
+
   return (
  <>
  <section className="skills-area page-section" id='skills' >

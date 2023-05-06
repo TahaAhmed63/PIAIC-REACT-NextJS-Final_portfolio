@@ -6,15 +6,15 @@ import {IoIosGitNetwork} from 'react-icons/io'
 export const Services = () => {
     const [servicesData,setServicesData]=useState([])
     useEffect(() => {
-        async function fetchResumeData() {
+        async function fetchServicesData() {
           const response = await fetch('https://cdn.contentful.com/spaces/kaycm8ritkli/environments/master/entries/3YVq74KpMgaCIiEDXHzf8v?access_token=KtDKcjJxhcgdzJuzEvf21tWpCd-BLjijjzDu9J8cmro');
           const data = await response.json();
           setServicesData(data.fields.services);
         }
     
-        fetchResumeData();
+        fetchServicesData();
       }, []);
-      
+
   return (
     <>
 <section className="services-area page-section" id="services">

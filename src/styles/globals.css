@@ -227,6 +227,45 @@ margin-right: 0px !important;
     transform: translateY(-50%);
 }
 }
+
+
+@media (max-width: 767px){
+  .menu-scroll {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* to center the items horizontally */
+    align-items: center; /* to center the items vertically */
+    position: fixed;
+    bottom: 0;
+    gap: 15px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 75%;
+    height: 60px; /* adjust the height to your liking */
+  }
+.hero-section .hero-content h1 {
+  font-size: 48px !important;
+  line-height: 60px !important;
+  color: #fff;
+  font-weight: 300;
+  font-family: Inter,sans-serif;
+  margin-bottom: 33px;
+}
+.portfolio-item-inner {
+  height: 215px !important;
+}
+.portfolio-item-inner img {
+  display: block;
+  object-fit: cover;
+  height: 100% !important;
+}
+.portfolio-categories {
+left: 0 !important;
+bottom: 0 !important;
+
+}
+}
 .overlay{
   position: absolute;
     left: 0;
@@ -883,7 +922,7 @@ color: #999999;
 }
 
  .portfolio-item-inner {
-  height: 370px;
+  height: 350px;
   overflow: hidden;
   border-radius: 30px;
   position: relative;
@@ -936,4 +975,343 @@ li{
   transition: .3s;
   font-family: Inter,sans-serif;
 
+}
+
+
+
+
+.testimonial-item .testimonial-item-inner {
+  border: 2px solid #565656;
+  border-radius: 30px;
+  padding: 50px 50px 43px 50px;
+}
+.author {
+  gap: 16px;
+  margin-bottom: 45px;
+  display: flex;
+  text-align: center;
+}
+
+.author img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.author h3 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.testimonial-item-inner > p {
+  font-size: 24px;
+  color: #fff;
+  font-family: Inter,sans-serif;
+  font-weight: 300;
+  line-height: 36px;
+  margin-bottom: 27px;
+}
+.author p span {
+  color: var(--primary_color);
+}
+.prev-arrow{
+  width: 45px;
+    height: 45px;
+    display: block;
+    background: none;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid #565656;
+    font-size: 18px;
+    color: #fff;
+    transition: .3s;
+}
+.next-arrow{
+  width: 45px;
+    height: 45px;
+    display: block;
+    background: none;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid #565656;
+    font-size: 18px;
+    color: #fff;
+    transition: .3s;
+}
+
+.testimonial-slider-buttons{
+  display: flex;
+  margin-top: 50px;
+  gap: 15px;
+  align-items: center;
+}
+.testimonial-slider-buttons p{
+  font-size: 13px;
+  color: #666666;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.author p {
+  color: #999999;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.3;
+}
+
+
+
+.contact-area {
+  padding-bottom: 50px;
+  padding-top: 90px !important;
+}
+.contact-area .contact-content h3 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+.input-group {
+  margin-bottom: 34px;
+  flex-direction: column;
+}
+
+
+.input-group label {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 2px;
+}
+.input-group input {
+  display: block;
+  color: #fff;
+  width: 100% !important;
+  border: none;
+  background: none;
+  font-size: 18px;
+  padding: 0;
+  transition: .2s;
+  padding-bottom: 3px;
+}
+.input-group label {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 2px;
+}
+.input-group textarea {
+  height: 140px;
+  border-bottom: 1px solid #555555 !important;
+  resize: none;
+}
+.contact-area {
+  display: block;
+  color: #fff;
+  width: 100%;
+  border: none;
+  background: none !important;
+  font-size: 18px;
+  padding: 0;
+  transition: .2s;
+  padding-bottom: 3px;
+}
+select{
+  display: block;
+  color: #fff;
+  width: 100%;
+  border: none;
+  background: none !important;
+  font-size: 18px;
+  padding: 0;
+  transition: .2s;
+  padding-bottom: 3px;
+}
+textarea{
+  display: block !important;
+    color: #fff !important;
+    width: 100% !important;
+    border: none !important;
+    background: none !important;
+    font-size: 18px !important;
+    padding: 0 !important;
+    transition: .2s !important;
+    padding-bottom: 3px !important;
+}
+.contact-content {
+  display: block;
+  color: #fff;
+  width: 100%;
+  border: none;
+  background: none !important;
+  font-size: 18px;
+  padding: 0;
+  transition: .2s;
+  padding-bottom: 3px;
+}
+.contact-form {
+  display: block;
+  color: #fff;
+  width: 100%;
+  border: none;
+  background: none !important;
+  font-size: 18px;
+  padding: 0;
+  transition: .2s;
+  padding-bottom: 3px;
+}
+
+
+
+/* 18 - Contact */
+.contact-area {
+    padding-bottom: 50px;
+}
+.contact-area .contact-content h3 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+.contact-area .contact-content #required-msg {
+    color: #fc4545;
+    font-size: 14px;
+    margin-bottom: 31px;
+    display: none;
+}
+.contact-area .contact-content #required-msg.show {
+    display: block;
+}
+.contact-area .contact-content .contact-form .input-group {
+    margin-bottom: 34px;
+}
+.contact-area .contact-content .contact-form .input-group label {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 2px;
+}
+.contact-area .contact-content .contact-form .input-group label sup {
+    color: #fc4545;
+    font-size: 12px;
+    top: 0;
+}
+.contact-area .contact-content .contact-form .input-group label span {
+    color: #999999;
+    text-transform: none;
+}
+.contact-area .contact-content .contact-form .input-group select,
+.contact-area .contact-content .contact-form .input-group textarea,
+.contact-area .contact-content .contact-form .input-group input {
+    display: block;
+    color: #fff;
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 18px;
+    padding: 0;
+    transition: .2s;
+    padding-bottom: 3px;
+}
+.contact-area .contact-content .contact-form .input-group textarea {
+    height: 140px;
+    border-bottom: 1px solid #555555;
+    resize: none;
+}
+.contact-area .contact-content .contact-form .input-group select {
+    display: block;
+    margin-left: -5px !important;
+    font-weight: 300;
+}
+.contact-area .contact-content .contact-form .input-group select:focus,
+.contact-area .contact-content .contact-form .input-group textarea:focus,
+.contact-area .contact-content .contact-form .input-group input:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #555555;
+}
+.contact-area .contact-content .contact-form .input-group textarea::placeholder,
+.contact-area .contact-content .contact-form .input-group input::placeholder {
+    color: #666666;
+}
+.contact-area .contact-content .contact-form .input-group.upload-attachment {
+    position: relative;
+}
+.contact-area .contact-content .contact-form .input-group.upload-attachment label {
+    overflow: hidden;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-area .contact-content .contact-form .input-group.upload-attachment label i {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 2px;
+}
+.contact-area .contact-content .contact-form .input-group.upload-attachment input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.contact-area .contact-content .contact-form .input-group.submit-btn-wrap {
+    margin-bottom: 0;
+    margin-top: 18px;
+}
+.form-control{
+min-width: 100% !important;
+}
+.fields:focus{
+  background: none !important;
+  border: none !important;
+  background-color: #000 !important;
+  font-size: 18px !important;
+  outline: none !important;
+  box-shadow: none !important;
+
+}
+.input-group>.form-select{
+  color: #fff;
+  width: 100% !important;
+  border: none;
+  background: none;
+  font-size: 18px;
+  padding: 0;
+  transition: .2s;
+  padding-bottom: 3px;
+}
+.theme-btn{
+  background: var(--primary_color) !important;
+  color: #000000 !important;
+  display: block !important;
+  text-align: center !important;
+  padding: 11px 58px 10px 58px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  border-radius: 30px !important;
+  justify-content: center !important;
+  text-transform: uppercase !important ;
+  border: none !important;
+  transition: .3s !important;
+  cursor: pointer !important;
+  border: 2px solid var(--primary_color) !important;
+  width: 32% !important;
+}
+.input-group.upload-attachment input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
 }
