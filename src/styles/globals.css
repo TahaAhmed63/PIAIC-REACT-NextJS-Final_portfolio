@@ -1317,6 +1317,6 @@ min-width: 100% !important;
   opacity: 0;
 }
 .theme-btn:hover {
-  background: none;
-  color: var(--primary_color);
+  background: none !important;
+  color: var(--primary_color) !important;
 }
