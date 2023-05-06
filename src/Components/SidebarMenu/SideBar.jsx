@@ -9,7 +9,7 @@ import {BsEnvelope} from 'react-icons/bs'
 import {FaStream} from 'react-icons/fa'
 import {SiGithub} from 'react-icons/si'
 import {TbBrandInstagram} from 'react-icons/tb'
-import {SiLinkedin} from 'react-icons/sl'
+import {SiLinkedin} from 'react-icons/si'
 import Link from 'next/link';
 import "./MyComponent.module.css"
 const Sidebar = () => {
