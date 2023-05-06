@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useMemo} from 'react'
 import {FaShapes} from 'react-icons/fa'
 import { Col, Row } from 'react-bootstrap'
 
@@ -13,6 +13,9 @@ export const Skills = () => {
     
         fetchSkillsData();
       }, []);
+const  myskillData=useMemo(()=>{
+return SkillsData
+}, [SkillsData])
 
   return (
  <>
@@ -28,7 +31,7 @@ export const Skills = () => {
         </div> 
         <Row className='text-center'>
 
-        {SkillsData.map((skill, index) => (
+        {myskillData.map((skill, index) => (
               <Col key={index} xs={6} md={3}>
                 <div className="skill">
                   <div className="skill-inner">

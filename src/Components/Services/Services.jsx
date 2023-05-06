@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from 'react'
+import React, { useState ,useEffect,useMemo} from 'react'
 import {FaStream} from 'react-icons/fa'
 import {FaBezierCurve} from 'react-icons/fa'
 import {RiCodeSSlashFill} from 'react-icons/ri'
@@ -14,7 +14,9 @@ export const Services = () => {
     
         fetchServicesData();
       }, []);
-
+const services=useMemo(()=>{
+return servicesData
+}, [servicesData])
   return (
     <>
 <section className="services-area page-section" id="services">
@@ -28,7 +30,7 @@ export const Services = () => {
                <h1>My <span>Specializations</span></h1>
             </div>
             <div className="services-items">
-            {servicesData.map((service, index) => (
+            {services.map((service, index) => (
                 <div className="service-item" key={index}>
                   <i>{service.icon === '<FaBezierCurve />' && <FaBezierCurve /> || service.icon === '<RiCodeSSlashFill />' && <RiCodeSSlashFill /> || service.icon === '<IoIosGitNetwork />' && <IoIosGitNetwork />   }</i>
                   <h2>{service.title}</h2>

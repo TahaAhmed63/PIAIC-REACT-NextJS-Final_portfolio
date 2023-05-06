@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState,useMemo } from 'react'
 import {AiOutlineHome} from 'react-icons/ai'
 import {RxPerson} from 'react-icons/rx'
 import {RiBriefcaseLine} from 'react-icons/ri'
@@ -39,7 +39,9 @@ const Sidebar = () => {
 
     fetchSidebarData();
   }, []);
-
+const myBardata = useMemo(()=>{
+return sidebarLinks
+},[sidebarLinks])
 
   return (
     <>
@@ -56,49 +58,49 @@ const Sidebar = () => {
           <li onClickonClick={() => {setActiveMenuItem('item2'); handleMenuClose();}}>
             <a href="#home">
             <i className='home'><AiOutlineHome/></i>
-            <span>{sidebarLinks[0]}</span>
+            <span>{myBardata[0]}</span>
             </a>
           </li>
           <li onClickonClick={() => {setActiveMenuItem('item2'); handleMenuClose();}}>
             <a href="#About">
             <i className='home'><RxPerson/></i>
-            <span>{sidebarLinks[1]}</span>
+            <span>{myBardata[1]}</span>
             </a>
           </li>
           <li onClickonClick={() => {setActiveMenuItem('item2'); handleMenuClose();}}>
             <a href="#Resume">
             <i className='home'><RiBriefcaseLine/></i>
-            <span>{sidebarLinks[2]}</span>
+            <span>{myBardata[2]}</span>
             </a>
           </li>
           <li onClickonClick={() => {setActiveMenuItem('item2'); handleMenuClose();}}>
             <a href="#services">
             <i className='home'><FaStream/></i>
-            <span>{sidebarLinks[3]}</span>
+            <span>{myBardata[3]}</span>
             </a>
           </li>
           <li onClickonClick={() => {setActiveMenuItem('item2'); handleMenuClose();}}>
             <a href="#skills">
             <i className='home'><FaShapes/></i>
-            <span>{sidebarLinks[4]}</span>
+            <span>{myBardata[4]}</span>
             </a>
           </li>
           <li onClickonClick={() => {setActiveMenuItem('item2'); handleMenuClose();}}>
             <a href="#portfolio">
             <i className='home'><FaGripVertical/></i>
-            <span>{sidebarLinks[5]}</span>
+            <span>{myBardata[5]}</span>
             </a>
           </li>
           <li onClickonClick={() => {setActiveMenuItem('item2'); handleMenuClose();}}>
             <a href="#testimonial">
             <i className='home'><CgComment/></i>
-            <span>{sidebarLinks[6]}</span>
+            <span>{myBardata[6]}</span>
             </a>
           </li>
           <li onClickonClick={() => {setActiveMenuItem('item2'); handleMenuClose();}}>
             <a href="#contact">
             <i className='home'><BsEnvelope/></i>
-            <span>{sidebarLinks[7]}</span>
+            <span>{myBardata[7]}</span>
             </a>
           </li>
         </ul>

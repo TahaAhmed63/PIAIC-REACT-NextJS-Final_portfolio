@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef,useMemo } from 'react';
 import { CgComment } from 'react-icons/cg';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import Slider from 'react-slick';
@@ -23,6 +23,9 @@ export const Testimonial = () => {
     }
     fetchTestimonialData();
   }, []);
+  const slideData=useMemo(()=>{
+     return testimonialData
+  }, [testimonialData])
 
   const slidePrev = () => {
     sliderRef.current.slickPrev();
@@ -32,7 +35,6 @@ export const Testimonial = () => {
     sliderRef.current.slickNext();
   };
 
-  console.log(testimonialData);
 
   const settings = {
     dots: false,
@@ -63,7 +65,7 @@ export const Testimonial = () => {
             </div>
             <div className="testimonial-slider-wrap">
               <Slider ref={sliderRef} {...settings}>
-                {testimonialData.map((testimonial, index) => (
+                {slideData.map((testimonial, index) => (
                   <div key={index}>
                     <div className="testimonial-item">
                       <div className="testimonial-item-inner">

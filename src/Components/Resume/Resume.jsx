@@ -1,4 +1,4 @@
-import {React,useState,useEffect} from 'react'
+import {React,useState,useEffect,useMemo} from 'react'
 import {RiBriefcaseLine} from 'react-icons/ri'
 
 export const Resume = () => {
@@ -12,6 +12,9 @@ export const Resume = () => {
     
         fetchResumeData();
       }, []);
+      const ResumeItem = useMemo(()=>{
+        return resumeData;
+      }, [resumeData])
   return (
    <>
    <section className="resume-area page-section" id='Resume'>
@@ -26,7 +29,7 @@ export const Resume = () => {
                 </h1>
             </div>
             <div className="resume-timeline">
-      {resumeData.map((item, index) => (
+      {ResumeItem.map((item, index) => (
         <div className="item scroll-animation" data-animation="fade_from_right" style={{ opacity: 1, transform: 'translate(0px, 0px)' }} key={index}>
           <span className="date">{item.date}</span>
           <h2>{item.title}</h2>

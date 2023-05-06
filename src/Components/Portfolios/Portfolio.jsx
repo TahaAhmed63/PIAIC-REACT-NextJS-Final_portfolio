@@ -1,18 +1,23 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useMemo} from 'react'
 import {FaGripVertical} from 'react-icons/fa'
 import { Col, Row } from 'react-bootstrap';
-
 export const Portfolio = () => {
-    const [portfolioItems, setPortfolioItems] = useState([]);
-    useEffect(() => {
-        async function fetchPortfolioData() {
-          const response = await fetch('  https://cdn.contentful.com/spaces/kaycm8ritkli/environments/master/entries/1pxeDa1TQfM9U5X1p41RC9?access_token=KtDKcjJxhcgdzJuzEvf21tWpCd-BLjijjzDu9J8cmro');
-          const data = await response.json();
-          setPortfolioItems(data.fields.projects.portfolioItems);
-        }
-    
-        fetchPortfolioData();
-      }, []);
+  const [portfolioItems, setPortfolioItems] = useState([]);
+  
+  useEffect(() => {
+    async function fetchPortfolioData() {
+      const response = await fetch('https://cdn.contentful.com/spaces/kaycm8ritkli/environments/master/entries/1pxeDa1TQfM9U5X1p41RC9?access_token=KtDKcjJxhcgdzJuzEvf21tWpCd-BLjijjzDu9J8cmro');
+      const data = await response.json();
+      setPortfolioItems(data.fields.projects.portfolioItems);
+    }
+
+    fetchPortfolioData();
+  }, []);
+
+  const webPortfolioItems = useMemo(() => {
+    return portfolioItems
+  }, [portfolioItems]);
+
   return (
     
    <>
@@ -29,7 +34,7 @@ export const Portfolio = () => {
                     </h1>
                 </div>
                 <Row className='row portfolio-items'>
-  {portfolioItems.map((item) => (
+  {webPortfolioItems.map((item) => (
     <Col md={item.type === 'full' ? 12 : 6} xs={12} key={item.id}>
       <div className='portfolio-item portfolio-full'>
         <div className='portfolio-item-inner'>
