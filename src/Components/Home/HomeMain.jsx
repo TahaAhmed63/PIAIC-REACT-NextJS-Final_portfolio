@@ -21,7 +21,7 @@ export const HomeMain = () => {
     <h1>Say Hi From <span>Taha, </span>Web Designer And Developer</h1>
   </div>
   <p>I design and code beautifully simple things and i love what i do. Just simple like that!</p>
-  <a href="" className='go-to-project-btn'>
+  <a href="portfolio" className='go-to-project-btn' >
 <Image src={myimg}/>
 <i><AiOutlineArrowDown/></i>
   </a>
