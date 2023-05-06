@@ -31,7 +31,7 @@ export const StaticIntro = () => {
             <h6>ataha6381@gmail.com</h6>
         </div>
         <div className="city">
-            <h6>Base in Karachi,pakistan</h6>
+            <h6>Living Karachi, pakistan</h6>
         </div>
         <div className="copyright">
             <h6>© 2023 Taha. All Rights Reserved</h6>
