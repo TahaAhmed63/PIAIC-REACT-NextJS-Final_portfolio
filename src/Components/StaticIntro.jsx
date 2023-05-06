@@ -1,7 +1,7 @@
 import React from 'react'
 import mylogo from "./../assets/Taha.jpg"
 import Image from 'next/image'
-import {TiSocialTwitter} from 'react-icons/ti'
+import {SiLinkedin} from 'react-icons/sl'
 import {TfiFacebook} from 'react-icons/tfi'
 import {RiInstagramLine} from 'react-icons/ri'
 import {VscGithub} from 'react-icons/vsc'
@@ -39,10 +39,10 @@ export const StaticIntro = () => {
     </div>
 <div className="socail-icon-wrap">
     <ul>
-<li><a href=""><TiSocialTwitter/></a></li>
-<li><a href=""><TfiFacebook/></a></li>
+<li><a href="https://www.linkedin.com/in/taha-ahmed-707716195/"><SiLinkedin/></a></li>
+<li><a href="https://www.facebook.com/profile.php?id=100072537464535"><TfiFacebook/></a></li>
 <li><a href=""><RiInstagramLine/></a></li>
-<li><a href=""><VscGithub/></a></li>
+<li><a href="https://github.com/TahaAhmed63"><VscGithub/></a></li>
     </ul>
 
 </div>

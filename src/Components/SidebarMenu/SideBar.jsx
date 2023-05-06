@@ -9,7 +9,7 @@ import {BsEnvelope} from 'react-icons/bs'
 import {FaStream} from 'react-icons/fa'
 import {SiGithub} from 'react-icons/si'
 import {TbBrandInstagram} from 'react-icons/tb'
-import {TiSocialTwitter} from 'react-icons/ti'
+import {SiLinkedin} from 'react-icons/sl'
 import Link from 'next/link';
 import "./MyComponent.module.css"
 const Sidebar = () => {
@@ -107,17 +107,17 @@ const Sidebar = () => {
         <p>Social</p>
 <ul className='socail-icon'>
 <li>
-  <a href="">
-    <i><TiSocialTwitter/></i>
+  <a href="https://www.linkedin.com/in/taha-ahmed-707716195/">
+    <i><SiLinkedin/></i>
   </a>
 </li>
 <li>
-  <a href="">
+  <a href="https://github.com/TahaAhmed63">
     <i><SiGithub/></i>
   </a>
 </li>
 <li>
-  <a href="">
+  <a href="https://www.facebook.com/profile.php?id=100072537464535">
     <i><TbBrandInstagram/></i>
   </a>
 </li>
